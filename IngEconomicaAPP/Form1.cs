@@ -116,9 +116,10 @@ namespace IngEconomicaAPP
                 vf = double.Parse(txtVF.Text);
                 vp = double.Parse(txtVP.Text);
                 n = double.Parse(txtNPeriodos.Text);
-
-
-
+       
+                i = 1 / n *((vf / vp) - 1);
+                i = i*100;
+                txtTI.Text = i.ToString();
             }
             if (cmbIS.SelectedItem.Equals("Número de periodos"))
             {
@@ -127,6 +128,9 @@ namespace IngEconomicaAPP
                 i = double.Parse(txtTI.Text);
                 i = i / 100;
 
+                n = 1 / i * ((vf / vp) - 1);
+          
+                txtNPeriodos.Text = n.ToString();
 
             }
         }
