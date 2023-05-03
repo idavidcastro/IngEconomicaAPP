@@ -97,6 +97,7 @@ namespace IngEconomicaAPP
 
                 
                 vp = vf / (1+i*n);
+                Math.Truncate(vp);
                 txtVP.Text = vp.ToString();
             }
 
@@ -109,6 +110,7 @@ namespace IngEconomicaAPP
 
 
                 vf = vp * (1 + i * n);
+                Math.Truncate(vf);
                 txtVF.Text = vf.ToString();
             }
             if (cmbIS.SelectedItem.Equals("Tasa de interés"))
@@ -129,7 +131,7 @@ namespace IngEconomicaAPP
                 i = i / 100;
 
                 n = 1 / i * ((vf / vp) - 1);
-          
+                Math.Truncate(n);
                 txtNPeriodos.Text = n.ToString();
 
             }
@@ -141,6 +143,13 @@ namespace IngEconomicaAPP
             txtVF.Text = "";
             txtTI.Text = "";
             txtNPeriodos.Text = "";
+        }
+        private void LimpiarCampos2()
+        {
+            txtVP2.Text = "";
+            txtVF2.Text = "";
+            txtTI2.Text = "";
+            txtNPeriodos2.Text = "";
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -156,6 +165,111 @@ namespace IngEconomicaAPP
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbIS2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (cmbIS2.SelectedItem.Equals("Valor presente"))
+            {
+                txtVP2.Enabled = false;
+                txtVF2.Enabled = true;
+                txtTI2.Enabled = true;
+                txtNPeriodos2.Enabled = true;
+                LimpiarCampos2();
+            }
+            if (cmbIS2.SelectedItem.Equals("Valor futuro"))
+            {
+                txtVP2.Enabled = true;
+                txtVF2.Enabled = false;
+                txtTI2.Enabled = true;
+                txtNPeriodos2.Enabled = true;
+                LimpiarCampos2();
+            }
+            if (cmbIS2.SelectedItem.Equals("Tasa de interés"))
+            {
+                txtVP2.Enabled = true;
+                txtVF2.Enabled = true;
+                txtTI2.Enabled = false;
+                txtNPeriodos2.Enabled = true;
+                LimpiarCampos2();
+            }
+            if (cmbIS2.SelectedItem.Equals("Número de periodos"))
+            {
+                txtVP2.Enabled = true;
+                txtVF2.Enabled = true;
+                txtTI2.Enabled = true;
+                txtNPeriodos2.Enabled = false;
+                LimpiarCampos2();
+            }
+        }
+
+        private void btnLimpiar2_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos2();
+        }
+
+        private void btnCalcular2_Click(object sender, EventArgs e)
+        {
+            double vf, vp, i, n;
+
+
+
+            if (cmbIS2.SelectedItem.Equals("Valor presente"))
+            {
+                //double elevador;
+                vf = double.Parse(txtVF2.Text);
+                i = double.Parse(txtTI2.Text);
+                i = i / 100;
+                n = double.Parse(txtNPeriodos2.Text);
+
+
+                vp = vf / Math.Pow((1 + i),n);
+                Math.Truncate(vp);
+                txtVP2.Text = vp.ToString();
+            }
+
+            if (cmbIS2.SelectedItem.Equals("Valor futuro"))
+            {
+                vp = double.Parse(txtVP2.Text);
+                i = double.Parse(txtTI2.Text);
+                i = i / 100;
+                n = double.Parse(txtNPeriodos2.Text);
+
+
+                vf = vp * Math.Pow((1 + i),n);
+                Math.Truncate(vf);
+                txtVF2.Text = vf.ToString();
+            }
+            if (cmbIS2.SelectedItem.Equals("Tasa de interés"))
+            {
+                vf = double.Parse(txtVF2.Text);
+                vp = double.Parse(txtVP2.Text);
+                n = double.Parse(txtNPeriodos2.Text);
+
+                
+
+                i = Math.Pow((vf/vp),1/n) -1;
+                i = i * 100;
+
+                txtTI2.Text = i.ToString();
+            }
+            if (cmbIS2.SelectedItem.Equals("Número de periodos"))
+            {
+                vf = double.Parse(txtVF2.Text);
+                vp = double.Parse(txtVP2.Text);
+                i = double.Parse(txtTI2.Text);
+                i = i / 100;
+
+                double arg1, arg2;
+                arg1 = vf / vp;
+                arg2 = 1 + i;
+
+                n = Math.Log(arg1)/Math.Log(arg2);
+                Math.Truncate(n);
+                txtNPeriodos2.Text = n.ToString();
+
+
+            }
         }
     }
 }
