@@ -221,7 +221,7 @@ namespace IngEconomicaAPP
                 i = double.Parse(txtTI2.Text);
                 i = i / 100;
                 n = double.Parse(txtNPeriodos2.Text);
-
+          
 
                 vp = vf / Math.Pow((1 + i),n);
                 Math.Truncate(vp);
@@ -231,10 +231,10 @@ namespace IngEconomicaAPP
             if (cmbIS2.SelectedItem.Equals("Valor futuro"))
             {
                 vp = double.Parse(txtVP2.Text);
+               
                 i = double.Parse(txtTI2.Text);
                 i = i / 100;
                 n = double.Parse(txtNPeriodos2.Text);
-
 
                 vf = vp * Math.Pow((1 + i),n);
                 Math.Truncate(vf);
@@ -270,6 +270,21 @@ namespace IngEconomicaAPP
 
 
             }
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVP2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
