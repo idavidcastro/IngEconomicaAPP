@@ -32,6 +32,9 @@ namespace IngEconomicaAPP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -56,6 +59,9 @@ namespace IngEconomicaAPP
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnLimpiar2 = new System.Windows.Forms.Button();
@@ -71,12 +77,6 @@ namespace IngEconomicaAPP
             this.label11 = new System.Windows.Forms.Label();
             this.cmbIS2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -132,6 +132,42 @@ namespace IngEconomicaAPP
             this.tabPage1.Size = new System.Drawing.Size(549, 586);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Interés Simple";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Black;
+            this.label23.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label23.Location = new System.Drawing.Point(437, 305);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(26, 23);
+            this.label23.TabIndex = 33;
+            this.label23.Text = "%";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Black;
+            this.label19.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(259, 259);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(22, 23);
+            this.label19.TabIndex = 32;
+            this.label19.Text = "$";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Black;
+            this.label18.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(259, 211);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(22, 23);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "$";
             // 
             // label13
             // 
@@ -309,7 +345,7 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-4, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(555, 585);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -361,7 +397,7 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(-4, -1);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(555, 585);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -412,7 +448,7 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(-4, -1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(555, 585);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -448,6 +484,42 @@ namespace IngEconomicaAPP
             this.tabPage2.Text = "Interés Compuesto";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Black;
+            this.label22.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label22.Location = new System.Drawing.Point(440, 305);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(25, 21);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "%";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Black;
+            this.label21.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label21.Location = new System.Drawing.Point(263, 260);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(21, 21);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "$";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Black;
+            this.label20.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label20.Location = new System.Drawing.Point(263, 210);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(21, 21);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "$";
             // 
             // label12
             // 
@@ -620,84 +692,12 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(555, 585);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Black;
-            this.label18.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(259, 211);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(22, 23);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "$";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(259, 259);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(22, 23);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "$";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Black;
-            this.label20.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label20.Location = new System.Drawing.Point(263, 210);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(21, 21);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "$";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Black;
-            this.label21.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label21.Location = new System.Drawing.Point(263, 260);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(21, 21);
-            this.label21.TabIndex = 30;
-            this.label21.Text = "$";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Black;
-            this.label22.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label22.Location = new System.Drawing.Point(440, 305);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(25, 21);
-            this.label22.TabIndex = 31;
-            this.label22.Text = "%";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Black;
-            this.label23.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(437, 305);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(26, 23);
-            this.label23.TabIndex = 33;
-            this.label23.Text = "%";
             // 
             // Form1
             // 
