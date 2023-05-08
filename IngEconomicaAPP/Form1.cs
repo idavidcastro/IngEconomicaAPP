@@ -82,10 +82,57 @@ namespace IngEconomicaAPP
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             //VP = VF / [(1 + i) ^ n]
             double vf, vp, i, n;
-            
+            int vlr, vlr2;
 
+            if (cmbTI.SelectedIndex==0)
+            {
+                vlr = 1;
+            }
+            else if (cmbTI.SelectedIndex == 1)
+            {
+                vlr = 2;
+            }
+            else if (cmbTI.SelectedIndex == 2)
+            {
+                vlr = 3;
+            }
+            else if (cmbTI.SelectedIndex == 3)
+            {
+                vlr = 6;
+            }
+            else
+            {
+                vlr = 12;
+            }
+
+            ////////////////////////////////////////////////////////
+            
+            if (cmbPeriodos.SelectedIndex == 0)
+            {
+                vlr2 = 1;
+            }
+            else if (cmbPeriodos.SelectedIndex == 1)
+            {
+                vlr2 = 2;
+            }
+            else if (cmbPeriodos.SelectedIndex == 2)
+            {
+                vlr2 = 3;
+            }
+            else if (cmbPeriodos.SelectedIndex == 3)
+            {
+                vlr2 = 6;
+            }
+            else
+            {
+                vlr2 = 12;
+            }
+
+            //////////////////////////////////////////////
 
             if (cmbIS.SelectedItem.Equals("Valor presente"))
             {
@@ -93,8 +140,12 @@ namespace IngEconomicaAPP
                 vf = double.Parse(txtVF.Text);
                 i = double.Parse(txtTI.Text);
                 i = i / 100;
+
                 n = double.Parse(txtNPeriodos.Text);
 
+                n = (n * vlr2) / vlr;
+
+               
                 
                 vp = vf / (1+i*n);
                 Math.Truncate(vp);
@@ -107,7 +158,7 @@ namespace IngEconomicaAPP
                 i = double.Parse(txtTI.Text);
                 i = i / 100;
                 n = double.Parse(txtNPeriodos.Text);
-
+                n = (n * vlr2) / vlr;
 
                 vf = vp * (1 + i * n);
                 Math.Truncate(vf);
@@ -118,7 +169,8 @@ namespace IngEconomicaAPP
                 vf = double.Parse(txtVF.Text);
                 vp = double.Parse(txtVP.Text);
                 n = double.Parse(txtNPeriodos.Text);
-       
+                n = (n * vlr2) / vlr;
+
                 i = 1 / n *((vf / vp) - 1);
                 i = i*100;
                 txtTI.Text = i.ToString();
@@ -211,6 +263,53 @@ namespace IngEconomicaAPP
         private void btnCalcular2_Click(object sender, EventArgs e)
         {
             double vf, vp, i, n;
+            int vlr, vlr2;
+
+            if (cmbTI2.SelectedIndex == 0)
+            {
+                vlr = 1;
+            }
+            else if (cmbTI2.SelectedIndex == 1)
+            {
+                vlr = 2;
+            }
+            else if (cmbTI2.SelectedIndex == 2)
+            {
+                vlr = 3;
+            }
+            else if (cmbTI2.SelectedIndex == 3)
+            {
+                vlr = 6;
+            }
+            else
+            {
+                vlr = 12;
+            }
+
+            ////////////////////////////////////////////////////////
+
+            if (cmbPeriodos2.SelectedIndex == 0)
+            {
+                vlr2 = 1;
+            }
+            else if (cmbPeriodos2.SelectedIndex == 1)
+            {
+                vlr2 = 2;
+            }
+            else if (cmbPeriodos2.SelectedIndex == 2)
+            {
+                vlr2 = 3;
+            }
+            else if (cmbPeriodos2.SelectedIndex == 3)
+            {
+                vlr2 = 6;
+            }
+            else
+            {
+                vlr2 = 12;
+            }
+
+            //////////////////////////////////////////////
 
 
 
@@ -221,7 +320,10 @@ namespace IngEconomicaAPP
                 i = double.Parse(txtTI2.Text);
                 i = i / 100;
                 n = double.Parse(txtNPeriodos2.Text);
-          
+                n = (n * vlr2) / vlr;
+
+                MessageBox.Show(n.ToString());
+
 
                 vp = vf / Math.Pow((1 + i),n);
                 Math.Truncate(vp);
@@ -235,6 +337,8 @@ namespace IngEconomicaAPP
                 i = double.Parse(txtTI2.Text);
                 i = i / 100;
                 n = double.Parse(txtNPeriodos2.Text);
+                n = (n * vlr2) / vlr;
+
 
                 vf = vp * Math.Pow((1 + i),n);
                 Math.Truncate(vf);
@@ -245,8 +349,8 @@ namespace IngEconomicaAPP
                 vf = double.Parse(txtVF2.Text);
                 vp = double.Parse(txtVP2.Text);
                 n = double.Parse(txtNPeriodos2.Text);
+                n = (n * vlr2) / vlr;
 
-                
 
                 i = Math.Pow((vf/vp),1/n) -1;
                 i = i * 100;

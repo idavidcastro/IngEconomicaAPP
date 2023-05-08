@@ -77,6 +77,10 @@ namespace IngEconomicaAPP
             this.label11 = new System.Windows.Forms.Label();
             this.cmbIS2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbTI = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodos = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodos2 = new System.Windows.Forms.ComboBox();
+            this.cmbTI2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -99,13 +103,15 @@ namespace IngEconomicaAPP
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(557, 619);
+            this.tabControl1.Size = new System.Drawing.Size(677, 697);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Tag = "";
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Turquoise;
+            this.tabPage1.Controls.Add(this.cmbPeriodos);
+            this.tabPage1.Controls.Add(this.cmbTI);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.label18);
@@ -129,7 +135,7 @@ namespace IngEconomicaAPP
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(549, 586);
+            this.tabPage1.Size = new System.Drawing.Size(669, 664);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Interés Simple";
             // 
@@ -347,7 +353,7 @@ namespace IngEconomicaAPP
             this.pictureBox2.Location = new System.Drawing.Point(-4, -1);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(555, 585);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 212);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
@@ -457,6 +463,8 @@ namespace IngEconomicaAPP
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cmbPeriodos2);
+            this.tabPage2.Controls.Add(this.cmbTI2);
             this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.label21);
             this.tabPage2.Controls.Add(this.label20);
@@ -479,7 +487,7 @@ namespace IngEconomicaAPP
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(549, 586);
+            this.tabPage2.Size = new System.Drawing.Size(669, 664);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Interés Compuesto";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -694,16 +702,80 @@ namespace IngEconomicaAPP
             this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 585);
+            this.pictureBox1.Size = new System.Drawing.Size(24, 363);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
+            // 
+            // cmbTI
+            // 
+            this.cmbTI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTI.FormattingEnabled = true;
+            this.cmbTI.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimensual",
+            "Trimestral",
+            "Semestral",
+            "Anual"});
+            this.cmbTI.Location = new System.Drawing.Point(483, 303);
+            this.cmbTI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTI.Name = "cmbTI";
+            this.cmbTI.Size = new System.Drawing.Size(154, 28);
+            this.cmbTI.TabIndex = 34;
+            // 
+            // cmbPeriodos
+            // 
+            this.cmbPeriodos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodos.FormattingEnabled = true;
+            this.cmbPeriodos.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimensual",
+            "Trimestral",
+            "Semestral",
+            "Anual"});
+            this.cmbPeriodos.Location = new System.Drawing.Point(483, 352);
+            this.cmbPeriodos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbPeriodos.Name = "cmbPeriodos";
+            this.cmbPeriodos.Size = new System.Drawing.Size(154, 28);
+            this.cmbPeriodos.TabIndex = 35;
+            // 
+            // cmbPeriodos2
+            // 
+            this.cmbPeriodos2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodos2.FormattingEnabled = true;
+            this.cmbPeriodos2.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimensual",
+            "Trimestral",
+            "Semestral",
+            "Anual"});
+            this.cmbPeriodos2.Location = new System.Drawing.Point(488, 352);
+            this.cmbPeriodos2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbPeriodos2.Name = "cmbPeriodos2";
+            this.cmbPeriodos2.Size = new System.Drawing.Size(154, 28);
+            this.cmbPeriodos2.TabIndex = 37;
+            // 
+            // cmbTI2
+            // 
+            this.cmbTI2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTI2.FormattingEnabled = true;
+            this.cmbTI2.Items.AddRange(new object[] {
+            "Mensual",
+            "Bimensual",
+            "Trimestral",
+            "Semestral",
+            "Anual"});
+            this.cmbTI2.Location = new System.Drawing.Point(488, 303);
+            this.cmbTI2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTI2.Name = "cmbTI2";
+            this.cmbTI2.Size = new System.Drawing.Size(154, 28);
+            this.cmbTI2.TabIndex = 36;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 615);
+            this.ClientSize = new System.Drawing.Size(674, 698);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -775,6 +847,10 @@ namespace IngEconomicaAPP
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox cmbPeriodos;
+        private System.Windows.Forms.ComboBox cmbTI;
+        private System.Windows.Forms.ComboBox cmbPeriodos2;
+        private System.Windows.Forms.ComboBox cmbTI2;
     }
 }
 
