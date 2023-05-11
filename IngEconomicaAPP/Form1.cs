@@ -82,6 +82,16 @@ namespace IngEconomicaAPP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtVP.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS VACIOS");
+            else if (txtVF.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS VACIOS");
+            else if (txtTI.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS  VACIOS");
+            else if (txtNPeriodos.Text == "")
+                MessageBox.Show("");
+           
+
 
 
             //VP = VF / [(1 + i) ^ n]
@@ -387,6 +397,11 @@ namespace IngEconomicaAPP
         }
 
         private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numerico(object sender, CancelEventArgs e)
         {
 
         }
