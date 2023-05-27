@@ -405,5 +405,10 @@ namespace IngEconomicaAPP
         {
 
         }
+
+        private void cmbIS2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

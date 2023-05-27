@@ -148,6 +148,7 @@ namespace IngEconomicaAPP
             this.btnLimpiar.TabIndex = 47;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnCalcular
             // 
@@ -277,6 +278,7 @@ namespace IngEconomicaAPP
             this.cmbIS.Name = "cmbIS";
             this.cmbIS.Size = new System.Drawing.Size(152, 21);
             this.cmbIS.TabIndex = 36;
+            this.cmbIS.SelectedIndexChanged += new System.EventHandler(this.cmbIS_SelectedIndexChanged);
             // 
             // panel1
             // 

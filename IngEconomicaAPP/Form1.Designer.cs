@@ -747,6 +747,7 @@ namespace IngEconomicaAPP
             this.cmbIS2.Name = "cmbIS2";
             this.cmbIS2.Size = new System.Drawing.Size(152, 25);
             this.cmbIS2.TabIndex = 14;
+            this.cmbIS2.SelectedIndexChanged += new System.EventHandler(this.cmbIS2_SelectedIndexChanged);
             this.cmbIS2.SelectedValueChanged += new System.EventHandler(this.cmbIS2_SelectedValueChanged);
             // 
             // Form1

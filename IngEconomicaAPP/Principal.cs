@@ -127,5 +127,15 @@ namespace IngEconomicaAPP
         {
             AbrirFormHijo(new InteresCompuesto());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Anualidades());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Gradiente());
+        }
     }
 }

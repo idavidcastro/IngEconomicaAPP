@@ -160,6 +160,7 @@ namespace IngEconomicaAPP
             this.btnLimpiar2.TabIndex = 49;
             this.btnLimpiar2.Text = "Limpiar";
             this.btnLimpiar2.UseVisualStyleBackColor = false;
+            this.btnLimpiar2.Click += new System.EventHandler(this.btnLimpiar2_Click);
             // 
             // btnCalcular2
             // 
@@ -174,6 +175,7 @@ namespace IngEconomicaAPP
             this.btnCalcular2.TabIndex = 48;
             this.btnCalcular2.Text = "Calcular";
             this.btnCalcular2.UseVisualStyleBackColor = false;
+            this.btnCalcular2.Click += new System.EventHandler(this.btnCalcular2_Click);
             // 
             // txtNPeriodos2
             // 
@@ -287,6 +289,7 @@ namespace IngEconomicaAPP
             this.cmbIS2.Name = "cmbIS2";
             this.cmbIS2.Size = new System.Drawing.Size(152, 21);
             this.cmbIS2.TabIndex = 38;
+            this.cmbIS2.SelectedIndexChanged += new System.EventHandler(this.cmbIS2_SelectedIndexChanged);
             // 
             // panel1
             // 

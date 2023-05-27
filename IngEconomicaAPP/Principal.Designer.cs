@@ -101,6 +101,7 @@ namespace IngEconomicaAPP
             this.button5.TabIndex = 2;
             this.button5.Text = "GRADIENTE";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox2
             // 
@@ -126,6 +127,7 @@ namespace IngEconomicaAPP
             this.button4.TabIndex = 3;
             this.button4.Text = "ANUALIDADES";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
