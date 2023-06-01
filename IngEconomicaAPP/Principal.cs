@@ -135,7 +135,7 @@ namespace IngEconomicaAPP
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Gradiente());
+            AbrirFormHijo(new Amortizacion());
         }
     }
 }

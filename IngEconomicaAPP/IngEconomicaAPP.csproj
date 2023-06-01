@@ -82,11 +82,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gradiente.cs">
+    <Compile Include="Amortizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gradiente.Designer.cs">
-      <DependentUpon>Gradiente.cs</DependentUpon>
+    <Compile Include="Amortizacion.Designer.cs">
+      <DependentUpon>Amortizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Informacion.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gradiente.resx">
-      <DependentUpon>Gradiente.cs</DependentUpon>
+    <EmbeddedResource Include="Amortizacion.resx">
+      <DependentUpon>Amortizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informacion.resx">
       <DependentUpon>Informacion.cs</DependentUpon>
