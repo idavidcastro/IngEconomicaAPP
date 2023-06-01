@@ -288,6 +288,7 @@ namespace IngEconomicaAPP
                         n = (n * vlr2) / vlr;
                         i = double.Parse(txtTIA.Text);
                         i = i / 100;
+                        
 
                         r = (vf * i) / ((1+i)*(Math.Pow((1 + i), n) - 1));
                         Math.Truncate(r);

@@ -99,7 +99,7 @@ namespace IngEconomicaAPP
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(223, 65);
             this.button5.TabIndex = 2;
-            this.button5.Text = "GRADIENTE";
+            this.button5.Text = "AMORTIZACION";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -165,14 +165,15 @@ namespace IngEconomicaAPP
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.SystemColors.InfoText;
+            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnrestaurar);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.btnmaximizar);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(229, 1);
+            this.panel2.Location = new System.Drawing.Point(232, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1070, 60);
+            this.panel2.Size = new System.Drawing.Size(1067, 60);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
@@ -181,7 +182,7 @@ namespace IngEconomicaAPP
             // 
             this.btnrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnrestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnrestaurar.Image")));
-            this.btnrestaurar.Location = new System.Drawing.Point(992, 11);
+            this.btnrestaurar.Location = new System.Drawing.Point(987, 11);
             this.btnrestaurar.Name = "btnrestaurar";
             this.btnrestaurar.Size = new System.Drawing.Size(33, 40);
             this.btnrestaurar.TabIndex = 7;
@@ -192,7 +193,7 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(958, 13);
+            this.pictureBox5.Location = new System.Drawing.Point(953, 13);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(29, 39);
             this.pictureBox5.TabIndex = 6;
@@ -203,7 +204,7 @@ namespace IngEconomicaAPP
             // 
             this.btnmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnmaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnmaximizar.Image")));
-            this.btnmaximizar.Location = new System.Drawing.Point(993, 11);
+            this.btnmaximizar.Location = new System.Drawing.Point(988, 11);
             this.btnmaximizar.Name = "btnmaximizar";
             this.btnmaximizar.Size = new System.Drawing.Size(32, 40);
             this.btnmaximizar.TabIndex = 4;
@@ -214,7 +215,7 @@ namespace IngEconomicaAPP
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1031, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(1026, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(34, 39);
             this.pictureBox4.TabIndex = 5;

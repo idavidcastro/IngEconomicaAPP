@@ -57,7 +57,7 @@ namespace IngEconomicaAPP
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
             this.label1.Location = new System.Drawing.Point(226, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(620, 74);
@@ -100,7 +100,7 @@ namespace IngEconomicaAPP
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label23.BackColor = System.Drawing.Color.Black;
             this.label23.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label23.Location = new System.Drawing.Point(484, 192);
@@ -113,7 +113,7 @@ namespace IngEconomicaAPP
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label19.BackColor = System.Drawing.Color.Black;
             this.label19.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label19.Location = new System.Drawing.Point(342, 154);
@@ -126,7 +126,7 @@ namespace IngEconomicaAPP
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label18.BackColor = System.Drawing.Color.Black;
             this.label18.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(342, 115);
@@ -139,8 +139,8 @@ namespace IngEconomicaAPP
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Snow;
-            this.btnLimpiar.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.Red;
+            this.btnLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Chartreuse;
             this.btnLimpiar.Location = new System.Drawing.Point(668, 412);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
@@ -152,7 +152,7 @@ namespace IngEconomicaAPP
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackColor = System.Drawing.Color.Red;
+            this.btnCalcular.BackColor = System.Drawing.Color.Chartreuse;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.SystemColors.Info;
@@ -176,9 +176,9 @@ namespace IngEconomicaAPP
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(165, 232);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -198,9 +198,9 @@ namespace IngEconomicaAPP
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(206, 191);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -219,9 +219,9 @@ namespace IngEconomicaAPP
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(223, 155);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -240,9 +240,9 @@ namespace IngEconomicaAPP
             // lblvpresente
             // 
             this.lblvpresente.AutoSize = true;
-            this.lblvpresente.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.lblvpresente.BackColor = System.Drawing.Color.Black;
             this.lblvpresente.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvpresente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblvpresente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblvpresente.Location = new System.Drawing.Point(207, 115);
             this.lblvpresente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblvpresente.Name = "lblvpresente";
@@ -253,9 +253,9 @@ namespace IngEconomicaAPP
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(240, 58);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -282,7 +282,7 @@ namespace IngEconomicaAPP
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cmbPeriodos);
@@ -302,7 +302,7 @@ namespace IngEconomicaAPP
             this.panel1.Controls.Add(this.lblvpresente);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cmbIS);
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(113, 128);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(838, 489);
@@ -312,9 +312,11 @@ namespace IngEconomicaAPP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InteresSimple";
             this.Text = "InteresSimple";

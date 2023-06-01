@@ -40,17 +40,17 @@ namespace IngEconomicaAPP
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(417, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label1.Location = new System.Drawing.Point(313, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(671, 91);
+            this.label1.Size = new System.Drawing.Size(538, 74);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORMACION";
             // 
@@ -59,11 +59,10 @@ namespace IngEconomicaAPP
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(135, 353);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label2.Location = new System.Drawing.Point(101, 287);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 31);
+            this.label2.Size = new System.Drawing.Size(200, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "INTERES SIMPLE";
             // 
@@ -73,10 +72,9 @@ namespace IngEconomicaAPP
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(664, 199);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(498, 162);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 31);
+            this.label3.Size = new System.Drawing.Size(0, 24);
             this.label3.TabIndex = 2;
             // 
             // label4
@@ -84,11 +82,10 @@ namespace IngEconomicaAPP
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(947, 354);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label4.Location = new System.Drawing.Point(710, 288);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(330, 31);
+            this.label4.Size = new System.Drawing.Size(257, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "INTERES COMPUESTO";
             // 
@@ -97,11 +94,10 @@ namespace IngEconomicaAPP
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(135, 599);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label5.Location = new System.Drawing.Point(101, 487);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 31);
+            this.label5.Size = new System.Drawing.Size(180, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "ANUALIDADES";
             // 
@@ -110,52 +106,48 @@ namespace IngEconomicaAPP
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(971, 601);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label6.Location = new System.Drawing.Point(728, 488);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(191, 31);
+            this.label6.Size = new System.Drawing.Size(148, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "GRADIENTE";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.richTextBox1.Location = new System.Drawing.Point(827, 388);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.richTextBox1.Location = new System.Drawing.Point(620, 315);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(612, 118);
+            this.richTextBox1.Size = new System.Drawing.Size(459, 96);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // richTextBox2
             // 
-            this.richTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.richTextBox2.Location = new System.Drawing.Point(827, 645);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.richTextBox2.Location = new System.Drawing.Point(620, 524);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(612, 118);
+            this.richTextBox2.Size = new System.Drawing.Size(459, 96);
             this.richTextBox2.TabIndex = 7;
             this.richTextBox2.Text = "Los gradientes son formas de pago diferentes a las tradicionales\n en el que las c" +
     "uotas varían en cada periodo. ";
             // 
             // richTextBox3
             // 
-            this.richTextBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.richTextBox3.Location = new System.Drawing.Point(55, 409);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.richTextBox3.Location = new System.Drawing.Point(41, 332);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(612, 118);
+            this.richTextBox3.Size = new System.Drawing.Size(459, 96);
             this.richTextBox3.TabIndex = 8;
             this.richTextBox3.Text = "El interés simple se puede definir como el interés cobrado sobre\n la cantidad tot" +
     "al del capital tomado por un período de tiempo particular. \nLos intereses solo s" +
@@ -163,23 +155,35 @@ namespace IngEconomicaAPP
             // 
             // richTextBox4
             // 
-            this.richTextBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.richTextBox4.Location = new System.Drawing.Point(55, 644);
-            this.richTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox4.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.richTextBox4.Location = new System.Drawing.Point(41, 523);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(612, 118);
+            this.richTextBox4.Size = new System.Drawing.Size(459, 96);
             this.richTextBox4.TabIndex = 9;
             this.richTextBox4.Text = "una anualidad es un ingreso o desembolso de dinero\n que se concreta cada determin" +
     "ado intervalo de tiempo, que no siempre es un año.";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(990, 598);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 38);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Informacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1712, 814);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1100, 750);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
@@ -191,9 +195,10 @@ namespace IngEconomicaAPP
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Informacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Informacion";
+            this.Load += new System.EventHandler(this.Informacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +216,6 @@ namespace IngEconomicaAPP
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Button button1;
     }
 }

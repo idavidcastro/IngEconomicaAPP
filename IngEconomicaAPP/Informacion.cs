@@ -21,5 +21,10 @@ namespace IngEconomicaAPP
         {
 
         }
+
+        private void Informacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
