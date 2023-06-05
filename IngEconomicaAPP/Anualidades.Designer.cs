@@ -208,6 +208,7 @@ namespace IngEconomicaAPP
             this.btnLimpiar2.TabIndex = 49;
             this.btnLimpiar2.Text = "Limpiar";
             this.btnLimpiar2.UseVisualStyleBackColor = false;
+            this.btnLimpiar2.Click += new System.EventHandler(this.btnLimpiar2_Click);
             // 
             // label22
             // 

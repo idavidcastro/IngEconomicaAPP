@@ -137,5 +137,10 @@ namespace IngEconomicaAPP
         {
             AbrirFormHijo(new Amortizacion());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Formulas());
+        }
     }
 }

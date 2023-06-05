@@ -58,11 +58,11 @@ namespace IngEconomicaAPP
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label12.Location = new System.Drawing.Point(294, 41);
+            this.label12.Location = new System.Drawing.Point(319, 47);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(190, 24);
+            this.label12.Size = new System.Drawing.Size(585, 74);
             this.label12.TabIndex = 52;
             this.label12.Text = "AMORTIZACION";
             // 
@@ -199,6 +199,7 @@ namespace IngEconomicaAPP
             this.btnLimpiar2.TabIndex = 49;
             this.btnLimpiar2.Text = "Limpiar";
             this.btnLimpiar2.UseVisualStyleBackColor = false;
+            this.btnLimpiar2.Click += new System.EventHandler(this.btnLimpiar2_Click);
             // 
             // label22
             // 
@@ -303,6 +304,7 @@ namespace IngEconomicaAPP
             this.txtVFT.Name = "txtVFT";
             this.txtVFT.Size = new System.Drawing.Size(111, 20);
             this.txtVFT.TabIndex = 43;
+            this.txtVFT.TextChanged += new System.EventHandler(this.txtVFT_TextChanged);
             // 
             // label9
             // 

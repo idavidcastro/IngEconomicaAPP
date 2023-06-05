@@ -410,5 +410,10 @@ namespace IngEconomicaAPP
         {
 
         }
+
+        private void txtVP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

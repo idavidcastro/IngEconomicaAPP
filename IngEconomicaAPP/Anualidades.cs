@@ -26,14 +26,14 @@ namespace IngEconomicaAPP
 
         private void btnCalcular2_Click(object sender, EventArgs e)
         {
-            /* if (txtVA.Text == "")
+             if (txtVA.Text == "")
                  MessageBox.Show("EXISTEN CAMPOS VACIOS");
              else if (txtVf.Text == "")
                  MessageBox.Show("EXISTEN CAMPOS VACIOS");
              else if (txtTIA.Text == "")
                  MessageBox.Show("EXISTEN CAMPOS  VACIOS");
              else if (txtNPeriodosA.Text == "")
-                 MessageBox.Show(""); */
+                 MessageBox.Show(""); 
 
 
 
@@ -325,6 +325,19 @@ namespace IngEconomicaAPP
                 }
             }
            
+        }
+        private void LimpiarCampos()
+        {
+            txtVA.Text = "";
+            txtVf.Text = "";
+            txtTIA.Text = "";
+            txtNPeriodosA.Text = "";
+            txtRenta.Text = "";
+
+        }
+        private void btnLimpiar2_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

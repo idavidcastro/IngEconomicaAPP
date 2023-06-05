@@ -125,12 +125,12 @@ que se calcula en función de los intereses cobrados sobre los intereses devenga
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAOwAAADsAXkocb0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAAsUlEQVRYR2MYBaNg2IH/oaHMUCb9wX8by9P/bSyu/7exkYMK0RcALf8PxQ/+25kpQoXpB5AcMDCO
-        QHMA/R2BxQHEOwKo8CiaRipiy7sEEyZ2jVTF+EMCiwZaYNyOwKKYVhi7I7AopCW+hVFiYlFESzygDhjQ
-        KBjQREgwGx5G00BFTERBRA2A3XICPqcmGFDLQWBALQeBAbUcBIAWgxLyrYFrkjEwMA1oo3QUjALSAQMD
-        AAnF/mREOfX5AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACxSURBVFhHYxgF
+        o2DYgf+hocxQJv3BfxvL0/9tLK7/t7GRgwrRFwAt/w/FD/7bmSlChekHkBwwMI5AcwD9HYHFAcQ7Aqjw
+        KJpGKmLLuwQTJnaNVMX4QwKLBlpg3I7AophWGLsjsCikJb6FUWJiUURLPKAOGNAoGNBESDAbHkbTQEVM
+        REFEDYDdcgI+pyYYUMtBYEAtB4EBtRwEgBaDEvKtgWuSMTAwDWijdBSMAtIBAwMACcX+ZEQ59fkAAAAA
+        SUVORK5CYII=
 </value>
   </data>
 </root>

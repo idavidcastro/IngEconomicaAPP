@@ -88,6 +88,12 @@
     <Compile Include="Amortizacion.Designer.cs">
       <DependentUpon>Amortizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulas.Designer.cs">
+      <DependentUpon>Formulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Informacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Amortizacion.resx">
       <DependentUpon>Amortizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulas.resx">
+      <DependentUpon>Formulas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informacion.resx">
       <DependentUpon>Informacion.cs</DependentUpon>

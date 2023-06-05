@@ -141,7 +141,7 @@ namespace IngEconomicaAPP
             this.btnLimpiar.BackColor = System.Drawing.Color.Snow;
             this.btnLimpiar.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.Chartreuse;
-            this.btnLimpiar.Location = new System.Drawing.Point(668, 412);
+            this.btnLimpiar.Location = new System.Drawing.Point(673, 410);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(112, 47);

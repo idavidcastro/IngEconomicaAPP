@@ -335,6 +335,7 @@ namespace IngEconomicaAPP
             this.txtVP.Name = "txtVP";
             this.txtVP.Size = new System.Drawing.Size(111, 22);
             this.txtVP.TabIndex = 4;
+            this.txtVP.TextChanged += new System.EventHandler(this.txtVP_TextChanged);
             this.txtVP.Validating += new System.ComponentModel.CancelEventHandler(this.numerico);
             // 
             // lblvpresente

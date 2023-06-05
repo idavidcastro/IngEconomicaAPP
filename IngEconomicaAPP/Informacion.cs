@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Runtime.InteropServices;
+
 namespace IngEconomicaAPP
 {
     public partial class Informacion : Form
     {
+     
+    
         public Informacion()
         {
             InitializeComponent();
@@ -25,6 +29,11 @@ namespace IngEconomicaAPP
         private void Informacion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

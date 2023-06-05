@@ -24,6 +24,21 @@ namespace IngEconomicaAPP
 
         private void btnCalcularT_Click(object sender, EventArgs e)
         {
+            if (txtVPT.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS VACIOS" +
+                      " INGRESE VALOR 0 ");
+            else if (txtVFT.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS VACIOS");
+            else if (txtTIT.Text == "")
+                MessageBox.Show("EXISTEN CAMPOS  VACIOS");
+            else if (txtNPeriodosT.Text == "")
+                MessageBox.Show("");
+            else if (txtRentaT.Text == "")
+                MessageBox.Show("");
+
+
+
+
             double vf = 0, va = 0, i = 0, n = 0, r = 0;
             int vlr, vlr2;
 
@@ -102,6 +117,24 @@ namespace IngEconomicaAPP
                     txtRentaT.Text = r.ToString();
                 }
             }
+        }
+        private void LimpiarCampos()
+        {
+           txtVPT.Text = "";
+            txtVFT.Text = "";
+            txtTIT.Text = "";
+            txtNPeriodosT.Text = "";
+            txtRentaT.Text = "";
+
+        }
+        private void txtVFT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar2_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

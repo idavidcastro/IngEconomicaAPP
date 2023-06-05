@@ -43,6 +43,7 @@ namespace IngEconomicaAPP
             this.btnmaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -58,11 +59,12 @@ namespace IngEconomicaAPP
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Chartreuse;
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 750);
@@ -78,7 +80,7 @@ namespace IngEconomicaAPP
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 519);
+            this.button3.Location = new System.Drawing.Point(0, 515);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(223, 65);
             this.button3.TabIndex = 2;
@@ -95,7 +97,7 @@ namespace IngEconomicaAPP
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(1, 604);
+            this.button5.Location = new System.Drawing.Point(6, 597);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(223, 65);
             this.button5.TabIndex = 2;
@@ -121,7 +123,7 @@ namespace IngEconomicaAPP
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 436);
+            this.button4.Location = new System.Drawing.Point(1, 444);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(223, 65);
             this.button4.TabIndex = 3;
@@ -137,7 +139,7 @@ namespace IngEconomicaAPP
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1, 354);
+            this.button2.Location = new System.Drawing.Point(2, 373);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(223, 65);
             this.button2.TabIndex = 2;
@@ -153,7 +155,7 @@ namespace IngEconomicaAPP
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 271);
+            this.button1.Location = new System.Drawing.Point(3, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(223, 65);
             this.button1.TabIndex = 0;
@@ -226,9 +228,25 @@ namespace IngEconomicaAPP
             // 
             this.panel3.Location = new System.Drawing.Point(232, 59);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1067, 641);
+            this.panel3.Size = new System.Drawing.Size(1100, 750);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Chartreuse;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Chartreuse;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(2, 302);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(223, 65);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "FORMULAS";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Principal
             // 
@@ -269,5 +287,6 @@ namespace IngEconomicaAPP
         private System.Windows.Forms.PictureBox btnmaximizar;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button6;
     }
 }
