@@ -10,8 +10,8 @@ namespace IngEconomicaAPP
             InitializeComponent();
             cmbTAnualidades.SelectedIndex = 1;
             cmbVS.SelectedIndex = 0;
-            cmbTI2.SelectedIndex = 0;
-            cmbPeriodos2.SelectedIndex = 0;
+            
+            //cmbPeriodos2.SelectedIndex = 0;
             
         }
 
@@ -47,11 +47,11 @@ namespace IngEconomicaAPP
 
                     if (cmbTI2.SelectedIndex == 0)
                     {
-                        vlr = 1;
+                        vlr = 12;
                     }
                     else if (cmbTI2.SelectedIndex == 1)
                     {
-                        vlr = 2;
+                        vlr = 6;
                     }
                     else if (cmbTI2.SelectedIndex == 2)
                     {
@@ -59,35 +59,13 @@ namespace IngEconomicaAPP
                     }
                     else if (cmbTI2.SelectedIndex == 3)
                     {
-                        vlr = 6;
+                        vlr = 2;
                     }
                     else
                     {
-                        vlr = 12;
+                        vlr = 1;
                     }
 
-                    ////////////////////////////////////////////////////////
-
-                    if (cmbPeriodos2.SelectedIndex == 0)
-                    {
-                        vlr2 = 1;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 1)
-                    {
-                        vlr2 = 2;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 2)
-                    {
-                        vlr2 = 3;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 3)
-                    {
-                        vlr2 = 6;
-                    }
-                    else
-                    {
-                        vlr2 = 12;
-                    }
 
                     //////////////////////////////////////////////
 
@@ -101,7 +79,7 @@ namespace IngEconomicaAPP
 
                         n = double.Parse(txtNPeriodosA.Text);
 
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
 
 
 
@@ -117,8 +95,9 @@ namespace IngEconomicaAPP
                         i = double.Parse(txtTIA.Text);
                         r = double.Parse(txtRenta.Text);
                         i = i / 100;
+                        i = i / vlr;
                         n = double.Parse(txtNPeriodosA.Text);
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
 
                         vf = r * (Math.Pow((1 + i), n) - 1) / i;
                         Math.Truncate(vf);
@@ -133,9 +112,10 @@ namespace IngEconomicaAPP
                             //vf = double.Parse(txtVf.Text);
                             //va = double.Parse(txtVA.Text);
                             n = double.Parse(txtNPeriodosA.Text);
-                            n = (n * vlr2) / vlr;
+                            //n = (n * vlr2) / vlr;
                             i = double.Parse(txtTIA.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             r = (va * i) / (1 - Math.Pow((1 + i), -n));
                             Math.Truncate(r);
@@ -146,9 +126,10 @@ namespace IngEconomicaAPP
                             //vf = double.Parse(txtVf.Text);
                             //va = double.Parse(txtVA.Text);
                             n = double.Parse(txtNPeriodosA.Text);
-                            n = (n * vlr2) / vlr;
+                            //n = (n * vlr2) / vlr;
                             i = double.Parse(txtTIA.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             r = (vf * i) / (Math.Pow((1 + i), n) - 1);
                             Math.Truncate(r);
@@ -165,6 +146,7 @@ namespace IngEconomicaAPP
                             i = double.Parse(txtTIA.Text);
                             r = double.Parse(txtRenta.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             n = Math.Log((vf * i / va) + 1) / Math.Log(1 + i);
                             Math.Truncate(n);
@@ -175,12 +157,12 @@ namespace IngEconomicaAPP
                             i = double.Parse(txtTIA.Text);
                             r = double.Parse(txtRenta.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             n = -Math.Log(1 - ((va * i) / r)) / Math.Log(1 + i);
                             Math.Truncate(n);
                             txtNPeriodosA.Text = n.ToString("0.00");
                         }
-
 
                     }
 
@@ -192,11 +174,11 @@ namespace IngEconomicaAPP
 
                     if (cmbTI2.SelectedIndex == 0)
                     {
-                        vlr = 1;
+                        vlr = 12;
                     }
                     else if (cmbTI2.SelectedIndex == 1)
                     {
-                        vlr = 2;
+                        vlr = 6;
                     }
                     else if (cmbTI2.SelectedIndex == 2)
                     {
@@ -204,49 +186,28 @@ namespace IngEconomicaAPP
                     }
                     else if (cmbTI2.SelectedIndex == 3)
                     {
-                        vlr = 6;
+                        vlr = 2;
                     }
                     else
                     {
-                        vlr = 12;
+                        vlr = 1;
                     }
 
-                    ////////////////////////////////////////////////////////
-
-                    if (cmbPeriodos2.SelectedIndex == 0)
-                    {
-                        vlr2 = 1;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 1)
-                    {
-                        vlr2 = 2;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 2)
-                    {
-                        vlr2 = 3;
-                    }
-                    else if (cmbPeriodos2.SelectedIndex == 3)
-                    {
-                        vlr2 = 6;
-                    }
-                    else
-                    {
-                        vlr2 = 12;
-                    }
+                
 
                     //////////////////////////////////////////////
 
-                    if (cmbVS.SelectedItem.Equals("Valor Actual"))
+                    if (cmbVS.SelectedItem.Equals("Valor actual"))
                     {
                         //double elevador;
                         //vf = double.Parse(txtVf.Text);
                         i = double.Parse(txtTIA.Text);
                         r = double.Parse(txtRenta.Text);
                         i = i / 100;
-
+                        i = i / vlr;
                         n = double.Parse(txtNPeriodosA.Text);
 
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
 
 
 
@@ -261,8 +222,9 @@ namespace IngEconomicaAPP
                         i = double.Parse(txtTIA.Text);
                         r = double.Parse(txtRenta.Text);
                         i = i / 100;
+                        i = i / vlr;
                         n = double.Parse(txtNPeriodosA.Text);
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
 
                         vf = r * ((Math.Pow((1 + i), n) - 1) / i) * (1 + i);
                         Math.Truncate(vf);
@@ -277,9 +239,10 @@ namespace IngEconomicaAPP
                             //vf = double.Parse(txtVf.Text);
                             //va = double.Parse(txtVA.Text);
                             n = double.Parse(txtNPeriodosA.Text);
-                            n = (n * vlr2) / vlr;
+                            //n = (n * vlr2) / vlr;
                             i = double.Parse(txtTIA.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             r = (va * i) / (1 + i) * (1 - Math.Pow((1 + i), -n));
                             Math.Truncate(r);
@@ -290,10 +253,10 @@ namespace IngEconomicaAPP
                             //vf = double.Parse(txtVf.Text);
                             //va = double.Parse(txtVA.Text);
                             n = double.Parse(txtNPeriodosA.Text);
-                            n = (n * vlr2) / vlr;
+                            //n = (n * vlr2) / vlr;
                             i = double.Parse(txtTIA.Text);
                             i = i / 100;
-
+                            i = i / vlr;
 
                             r = (vf * i) / ((1 + i) * (Math.Pow((1 + i), n) - 1));
                             Math.Truncate(r);
@@ -310,6 +273,7 @@ namespace IngEconomicaAPP
                             i = double.Parse(txtTIA.Text);
                             r = double.Parse(txtRenta.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             n = (Math.Log(vf * i + r * (1 + i)) - Math.Log(r * (1 + i))) / Math.Log(1 + i);
                             Math.Truncate(n);
@@ -320,6 +284,7 @@ namespace IngEconomicaAPP
                             i = double.Parse(txtTIA.Text);
                             r = double.Parse(txtRenta.Text);
                             i = i / 100;
+                            i = i / vlr;
 
                             n = (Math.Log(r * (1 + i)) - Math.Log(r * (1 + i) - va * i)) / Math.Log(1 + i);
                             Math.Truncate(n);

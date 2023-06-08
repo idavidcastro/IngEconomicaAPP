@@ -36,7 +36,6 @@ namespace IngEconomicaAPP
             this.label1 = new System.Windows.Forms.Label();
             this.txtRenta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbPeriodos2 = new System.Windows.Forms.ComboBox();
             this.cmbTI2 = new System.Windows.Forms.ComboBox();
             this.btnLimpiar2 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -77,7 +76,6 @@ namespace IngEconomicaAPP
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtRenta);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.cmbPeriodos2);
             this.panel1.Controls.Add(this.cmbTI2);
             this.panel1.Controls.Add(this.btnLimpiar2);
             this.panel1.Controls.Add(this.label22);
@@ -163,22 +161,6 @@ namespace IngEconomicaAPP
             this.label2.Size = new System.Drawing.Size(162, 23);
             this.label2.TabIndex = 57;
             this.label2.Text = "Valor de renta:";
-            // 
-            // cmbPeriodos2
-            // 
-            this.cmbPeriodos2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPeriodos2.FormattingEnabled = true;
-            this.cmbPeriodos2.Items.AddRange(new object[] {
-            "Meses",
-            "bimeses",
-            "Trimestres",
-            "Semestres",
-            "Años"});
-            this.cmbPeriodos2.Location = new System.Drawing.Point(734, 326);
-            this.cmbPeriodos2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbPeriodos2.Name = "cmbPeriodos2";
-            this.cmbPeriodos2.Size = new System.Drawing.Size(153, 24);
-            this.cmbPeriodos2.TabIndex = 56;
             // 
             // cmbTI2
             // 
@@ -401,7 +383,6 @@ namespace IngEconomicaAPP
 
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmbPeriodos2;
         private System.Windows.Forms.ComboBox cmbTI2;
         private System.Windows.Forms.Button btnLimpiar2;
         private System.Windows.Forms.Label label22;

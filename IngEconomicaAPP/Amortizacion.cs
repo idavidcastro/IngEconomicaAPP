@@ -10,8 +10,8 @@ namespace IngEconomicaAPP
             InitializeComponent();
             txtVPT.Text = 0.ToString();
             txtVFT.Text = 0.ToString();
-            cmbPeriodosT.SelectedIndex = 0;
-            cmbTIT.SelectedIndex = 0;
+
+
             cmbVST.SelectedIndex = 0;
             txtRentaT.Enabled = false;
         }
@@ -23,7 +23,7 @@ namespace IngEconomicaAPP
 
         private void btnCalcularT_Click(object sender, EventArgs e)
         {
-            
+
             if (txtVPT.Text == "" || txtVFT.Text == "" || txtTIT.Text == "" || txtNPeriodosT.Text == "")
             {
                 MessageBox.Show("EXISTEN CAMPOS  VACÍOS");
@@ -35,11 +35,11 @@ namespace IngEconomicaAPP
 
                 if (cmbTIT.SelectedIndex == 0)
                 {
-                    vlr = 1;
+                    vlr = 12;
                 }
                 else if (cmbTIT.SelectedIndex == 1)
                 {
-                    vlr = 2;
+                    vlr = 6;
                 }
                 else if (cmbTIT.SelectedIndex == 2)
                 {
@@ -47,35 +47,15 @@ namespace IngEconomicaAPP
                 }
                 else if (cmbTIT.SelectedIndex == 3)
                 {
-                    vlr = 6;
+                    vlr = 2;
                 }
                 else
                 {
-                    vlr = 12;
+                    vlr = 1;
                 }
 
                 ////////////////////////////////////////////////////////
 
-                if (cmbPeriodosT.SelectedIndex == 0)
-                {
-                    vlr2 = 1;
-                }
-                else if (cmbPeriodosT.SelectedIndex == 1)
-                {
-                    vlr2 = 2;
-                }
-                else if (cmbPeriodosT.SelectedIndex == 2)
-                {
-                    vlr2 = 3;
-                }
-                else if (cmbPeriodosT.SelectedIndex == 3)
-                {
-                    vlr2 = 6;
-                }
-                else
-                {
-                    vlr2 = 12;
-                }
 
                 if (cmbVST.SelectedItem.Equals("Renta"))
                 {
@@ -86,11 +66,13 @@ namespace IngEconomicaAPP
                         //vf = double.Parse(txtVf.Text);
                         //va = double.Parse(txtVA.Text);
                         n = double.Parse(txtNPeriodosT.Text);
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
                         i = double.Parse(txtTIT.Text);
                         i = i / 100;
+                        i = i / vlr;
 
                         r = (va * i) / (1 - Math.Pow((1 + i), -n));
+
                         Math.Truncate(r);
                         txtRentaT.Text = r.ToString("0.00");
                     }
@@ -99,9 +81,10 @@ namespace IngEconomicaAPP
                         //vf = double.Parse(txtVf.Text);
                         //va = double.Parse(txtVA.Text);
                         n = double.Parse(txtNPeriodosT.Text);
-                        n = (n * vlr2) / vlr;
+                        //n = (n * vlr2) / vlr;
                         i = double.Parse(txtTIT.Text);
                         i = i / 100;
+                        i = i / vlr;
 
                         r = (vf * i) / (Math.Pow((1 + i), n) - 1);
                         Math.Truncate(r);
