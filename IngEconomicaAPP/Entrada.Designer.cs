@@ -41,9 +41,10 @@ namespace IngEconomicaAPP
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(288, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(266, 36);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(536, 395);
+            this.pictureBox2.Size = new System.Drawing.Size(715, 486);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -53,9 +54,10 @@ namespace IngEconomicaAPP
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Black;
-            this.lblHora.Location = new System.Drawing.Point(443, 448);
+            this.lblHora.Location = new System.Drawing.Point(467, 572);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(184, 64);
+            this.lblHora.Size = new System.Drawing.Size(228, 79);
             this.lblHora.TabIndex = 5;
             this.lblHora.Text = "label1";
             this.lblHora.Click += new System.EventHandler(this.label1_Click);
@@ -65,9 +67,10 @@ namespace IngEconomicaAPP
             this.lblfecha.AutoSize = true;
             this.lblfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfecha.ForeColor = System.Drawing.Color.Black;
-            this.lblfecha.Location = new System.Drawing.Point(242, 541);
+            this.lblfecha.Location = new System.Drawing.Point(199, 687);
+            this.lblfecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(175, 55);
+            this.lblfecha.Size = new System.Drawing.Size(214, 69);
             this.lblfecha.TabIndex = 6;
             this.lblfecha.Text = "Label2";
             this.lblfecha.Click += new System.EventHandler(this.labelfecha_Click);
@@ -79,14 +82,15 @@ namespace IngEconomicaAPP
             // 
             // Entrada
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.ClientSize = new System.Drawing.Size(1248, 793);
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Entrada";
             this.Text = "Entrada";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
